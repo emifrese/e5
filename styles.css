@@ -1,0 +1,88 @@
+/* ----- fuentes ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+/* ----- variables ----- */
+
+:root {
+    --dark: #252525;
+    --mustard: #ffa400;
+    --pepperoni: #fc2933;
+    --light: #ffffff;
+    --gradient-colors: #ffa100, #fb103d;
+}
+
+/* ----- estilos ----- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #131415;
+}
+
+header {
+    border: 2px solid red;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 60px
+}
+
+.navBar span {
+    color: var(--light);
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.navBar li {
+    cursor: pointer;
+}
+
+.cartContainer {
+    position: relative;
+}
+
+.homeIcon, .userIcon {
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF9300 101.53%);
+}
+
+.cartIcon {
+    background: linear-gradient(98.81deg, #FF9300 -0.82%, #FF9300 101.53%);
+}
+
+.homeIcon, .cartIcon, .userIcon {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.cartBubble {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    width: 13px;
+    height: 13px;
+    background-color: var(--pepperoni);
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    font-size: 9px;
+    color: var(--light);
+    font-weight: 400;
+}
