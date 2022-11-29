@@ -26,7 +26,6 @@ body {
 }
 
 header {
-    border: 2px solid red;
     padding: 30px 60px;
     display: flex;
     justify-content: space-between;
