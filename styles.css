@@ -19,8 +19,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    list-style: none;
 }
 
 body {
@@ -87,6 +85,10 @@ header {
     color: var(--light);
     font-weight: 400;
 }
+
+
+
+
 .hero{
     padding: 30px;
     display: flex;
@@ -97,35 +99,34 @@ header {
 }
 .hero-text{
     padding-left: 100px;
+    padding-bottom: 20px;
 }
 .hero-text h2{
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 1500;
-    font-size: 60px;
+    font-weight: 700;
+    font-size: 66px;
     line-height: 131.02%;
     padding-bottom: 5px;
 }
 .hero-text h3{
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 1500;
-    font-size: 45px;
+    font-weight: 700;
+    font-size: 51px;
     line-height: 131.02%;
     padding-bottom: 5px;
 }
 .hero-text p{
-    font-family: 'Montserrat';
     padding-bottom: 50px;
+    font-size: 22px;
 }
 .hero-text input{
-    font-family: 'Montserrat';
     color: var(--light);
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
     box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
     border-radius: 15px;
     height: 50px;
     width: 166px;
+    font-size: 14px;
 }
 .hero-img{
     position: absolute;
@@ -136,36 +137,189 @@ header {
 }
 .pizzauno{
     position: absolute;
-    height: 205px;
-    width: 205px;
+    height: 265px;
+    width: 265px;
     top: -110px;
-    left: 800px;
-    right: 0;
-    bottom: 0;
+    left: 750px;
+    
 }
 .pizzados{
     position: absolute;
-    height: 275px;
-    width: 305px;
+    height: 392px;
+    width: 392px;
     z-index: 2;
-    top: -180px;
-    left: 890px;
-    right: 0;
-    bottom: 0;
+    top: -230px;
+    left: 880px;
 }
 .recomendaciones{
-    padding-left: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .recomendaciones p{
     font-family: 'Montserrat';
     padding-bottom: 50px;
+    color: var(--light);
+    font-size: 22px;
+    padding-left: 130px;
+}
+.card-recommendation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+
+
+.card-recommendation-one{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 15px;
+    width: 347px;
+    height: 103px;
+}
+.card-recommendation-one img{
+    height: 62px;
+    width: 62px;
+    border-radius: 15px;
+}
+.card-recommendation-one-text{
+    display: flex;
+    flex-direction: column;
+}
+.card-recommendation-one-text-title{
+    font-size: 15px;
+    color: var(--light);
+    font-weight: 500;
+}
+.card-recommendation-one-text-description{
+    color: #525252;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-recommendation-one-text-value{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 29px;
+    font-weight: 700;
+}
+.card-recommendation-one input{
+    height: 30px;
+    width: 90px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    border-radius: 17.5px;
+    color: var(--light);
+}
+
+
+
+.card-recommendation-two{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 15px;
+    width: 347px;
+    height: 103px;
+}
+.card-recommendation-two img{
+    height: 62px;
+    width: 62px;
+    border-radius: 15px;
+}
+.card-recommendation-two-text{
+    display: flex;
+    flex-direction: column;
+}
+.card-recommendation-two-text-title{
+    font-size: 15px;
+    color: var(--light);
+    font-weight: 500;
+}
+.card-recommendation-two-text-description{
+    color: #525252;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-recommendation-two-text-value{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 29px;
+    font-weight: 700;
+}
+.card-recommendation-two input{
+    height: 30px;
+    width: 90px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    border-radius: 17.5px;
+    color: var(--light);
+    
+}
+
+
+
+.card-recommendation-three{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #252525;
+    border-radius: 15px;
+    width: 347px;
+    height: 103px;
+}
+.card-recommendation-three img{
+    height: 62px;
+    width: 62px;
+    border-radius: 15px;
+}
+.card-recommendation-three-text{
+    display: flex;
+    flex-direction: column;
+}
+.card-recommendation-three-text-title{
+    font-size: 15px;
+    color: var(--light);
+    font-weight: 500;
+}
+.card-recommendation-three-text-description{
+    color: #525252;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-recommendation-three-text-value{
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 29px;
+    font-weight: 700;
+}
+.card-recommendation-three input{
+    height: 30px;
+    width: 90px;
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
+    border-radius: 17.5px;
     color: var(--light);
 }
 footer{
     display: flex;
     flex-direction: column;
     gap: 80px;
-    position: absolute;
     bottom:0;
     width: 100%;
    
@@ -197,3 +351,16 @@ footer{
     font-size: 20px;
     font-weight: 800;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
