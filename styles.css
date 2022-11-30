@@ -87,6 +87,80 @@ header {
     color: var(--light);
     font-weight: 400;
 }
+.hero{
+    padding: 30px;
+    display: flex;
+    background-color: #131415;
+    color: var(--light);
+    justify-content: flex-start;
+    align-items: center;
+}
+.hero-text{
+    padding-left: 100px;
+}
+.hero-text h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 1500;
+    font-size: 60px;
+    line-height: 131.02%;
+    padding-bottom: 5px;
+}
+.hero-text h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 1500;
+    font-size: 45px;
+    line-height: 131.02%;
+    padding-bottom: 5px;
+}
+.hero-text p{
+    font-family: 'Montserrat';
+    padding-bottom: 50px;
+}
+.hero-text input{
+    font-family: 'Montserrat';
+    color: var(--light);
+    background: linear-gradient(98.81deg, #FFA100 -0.82%, #FB103D 101.53%);
+    box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
+    border-radius: 15px;
+    height: 50px;
+    width: 166px;
+}
+.hero-img{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pizzauno{
+    position: absolute;
+    height: 205px;
+    width: 205px;
+    top: -110px;
+    left: 800px;
+    right: 0;
+    bottom: 0;
+}
+.pizzados{
+    position: absolute;
+    height: 275px;
+    width: 305px;
+    z-index: 2;
+    top: -180px;
+    left: 890px;
+    right: 0;
+    bottom: 0;
+}
+.recomendaciones{
+    padding-left: 130px;
+}
+.recomendaciones p{
+    font-family: 'Montserrat';
+    padding-bottom: 50px;
+    color: var(--light);
+}
 footer{
     display: flex;
     flex-direction: column;
@@ -123,4 +197,3 @@ footer{
     font-size: 20px;
     font-weight: 800;
 }
-
