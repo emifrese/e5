@@ -89,7 +89,6 @@ header {
 
 
 
-
 .hero{
     padding: 30px;
     display: flex;
@@ -172,6 +171,9 @@ header {
     flex-wrap: wrap;
     padding-bottom: 20px;
 }
+
+
+
 .card-recommendation-one{
     display: flex;
     justify-items: center;
@@ -217,6 +219,9 @@ header {
     border-radius: 17.5px;
     color: var(--light);
 }
+
+
+
 .card-recommendation-two{
     display: flex;
     justify-items: center;
@@ -261,7 +266,11 @@ header {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
     border-radius: 17.5px;
     color: var(--light);
+    
 }
+
+
+
 .card-recommendation-three{
     display: flex;
     justify-items: center;
@@ -306,6 +315,41 @@ header {
     background: linear-gradient(98.81deg, #FFA100 -0.82%, #FF005C 101.53%);
     border-radius: 17.5px;
     color: var(--light);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    bottom:0;
+    width: 100%;
+   
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.footerlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerlinks ul{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.footerlinks ul li a:visited{
+    color: var(--light);
+}
+.footerfinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
+}
+.footerfinal span{
+    font-size: 20px;
+    font-weight: 800;
 }
 
 
