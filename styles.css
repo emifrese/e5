@@ -365,6 +365,82 @@ header {
   border-radius: 1rem;
 }
 
+.popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 137px;
+}
+
+.popular p {
+  font-family: "Montserrat";
+  color: var(--light);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29px;
+  padding-left: 130px;
+  padding-bottom: 31px;
+}
+
+.popular-cards img {
+  width: 237px;
+  height: 97px;
+  border-radius: 16px;
+}
+
+.popular-cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.popular-cards {
+  width: 282px;
+  height: 213px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  background-color: #252525;
+  box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+  border-radius: 15px;
+}
+
+.pizza-title {
+  color: var(--light);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.pizza-desc {
+  color: #525252;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.pizza-value {
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  border-radius: 17.5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.popular-cards input {
+  width: 85px;
+  height: 29px;
+  border-radius: 17.5px;
+  background: linear-gradient(98.81deg, #ffa100 -0.82%, #ff005c 101.53%);
+  border-radius: 17.5px;
+  color: var(--light);
+}
+
 footer {
   display: flex;
   flex-direction: column;
