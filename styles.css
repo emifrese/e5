@@ -370,6 +370,7 @@ header {
   flex-direction: column;
   justify-content: center;
   padding-bottom: 137px;
+  padding-top: 74px;
 }
 
 .popular p {
@@ -394,13 +395,14 @@ header {
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
+  padding-left: 132px;
+  padding-right: 140px;
 }
 
 .popular-cards {
   width: 282px;
   height: 213px;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
@@ -408,6 +410,18 @@ header {
   background-color: #252525;
   box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
   border-radius: 15px;
+}
+
+.pizza-description {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 13px;
+}
+
+.pizza-button {
+  display: flex;
+  gap: 100.55px;
 }
 
 .pizza-title {
