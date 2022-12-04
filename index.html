@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>NUCBAZAPPI</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/nucbazappiicon.svg" alt="" />
+      <nav class="navBar">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house homeIcon"> </i>
+            <span>Home</span>
+          </li>
+          <li class="cartContainer">
+            <i class="fa-solid fa-cart-shopping cartIcon"></i>
+            <div class="cartBubble">7</div>
+          </li>
+          <li>
+            <i class="fa-solid fa-user userIcon"></i>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Si tenes Zappi,</h2>
+        <h3>tenes Nucba.</h3>
+        <p>Busca lo que quieras y nucba te quedes sin comida.</p>
+        <input type="button" class="hero-button" value="VER MÁS" />
+      </div>
+      <div class="hero-img">
+        <img
+          class="pizzauno"
+          src="./assets/img-hero/pizzauno.png"
+          alt="pizza"
+        />
+        <img
+          src="./assets/img-hero/pizzados.png"
+          alt="pizza"
+          class="pizzados"
+        />
+      </div>
+    </section>
+
+    <section class="recomendaciones">
+      <p>Hoy te recomendamos</p>
+      <div class="card-recommendation">
+        <div class="card-recommendation-one">
+          <img
+            src="./assets/img-hero/recommendation-one.jpg"
+            alt="recommendation"
+          />
+          <div class="card-recommendation-one-text">
+            <span class="card-recommendation-one-text-title">Bennazianna</span>
+            <span class="card-recommendation-one-text-description"
+              >La mas completa</span
+            >
+            <span class="card-recommendation-one-text-value">$ 3650</span>
+          </div>
+          <input type="button" value="Agregar" />
+        </div>
+
+        <div class="card-recommendation-two">
+          <img
+            src="./assets/img-hero/recommendation-two.jpg"
+            alt="recommendation"
+          />
+          <div class="card-recommendation-one-text">
+            <span class="card-recommendation-two-text-title">Tronco-Pizza</span>
+            <span class="card-recommendation-two-text-description"
+              >Para todo el día</span
+            >
+            <span class="card-recommendation-two-text-value">$ 870</span>
+          </div>
+          <input type="button" value="Agregar" />
+        </div>
+
+        <div class="card-recommendation-three">
+          <img
+            src="./assets/img-hero/recommendation-three.jpg"
+            alt="recommendation"
+          />
+          <div class="card-recommendation-three-text">
+            <span class="card-recommendation-three-text-title"
+              >Papas | Provenzal</span
+            >
+            <span class="card-recommendation-three-text-description"
+              >Van como piña</span
+            >
+            <span class="card-recommendation-three-text-value">$ 360</span>
+          </div>
+          <input type="button" value="Agregar" />
+        </div>
+      </div>
+    </section>
+
+    <section class="categories-container">
+      <h2>Categorías</h2>
+
+      <div class="category">
+        <div class="category-cards">
+          <div>
+            <img src="./assets/image 34.png" alt="" />
+            <img src="./assets/image 34.png" alt="" />
+          </div>
+          <h3>Pizza</h3>
+          <span class="decorator-bar"></span>
+        </div>
+        <div class="category-cards">
+          <div>
+            <img src="./assets/burger 1.png" alt="" />
+            <img src="./assets/burger 1.png" alt="" />
+          </div>
+          <h3>Hamburguesa</h3>
+          <span class="decorator-bar"></span>
+        </div>
+        <div class="category-cards">
+          <div>
+            <img src="./assets/fries 2.png" alt="" />
+            <img src="./assets/fries 2.png" alt="" />
+          </div>
+          <h3>Napapuki</h3>
+          <span class="decorator-bar"></span>
+        </div>
+        <div class="category-cards">
+          <div>
+            <img src="./assets/pizza 2.png" alt="" />
+            <img src="./assets/pizza 2.png" alt="" />
+          </div>
+          <h3>Individuales</h3>
+          <span class="decorator-bar"></span>
+        </div>
+        <div class="category-cards">
+          <div>
+            <img src="./assets/buritto 1.png" alt="" />
+            <img src="./assets/buritto 1.png" alt="" />
+          </div>
+          <h3>Wraps</h3>
+          <span class="decorator-bar"></span>
+        </div>
+        <div class="category-cards">
+          <div>
+            <img src="./assets/taco 1.png" alt="" />
+            <img src="./assets/taco 1.png" alt="" />
+          </div>
+          <h3>Mexican Food</h3>
+          <span class="decorator-bar"></span>
+        </div>
+        <div class="category-cards">
+          <div>
+            <img src="./assets/float 1.png" alt="" />
+            <img src="./assets/float 1.png" alt="" />
+          </div>
+          <h3>Batidukis</h3>
+          <span class="decorator-bar"></span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footerlinks">
+        <ul>
+          <li><a href="">Términos de Uso</a></li>
+          <li><a href="">Trabajá con nosotros</a></li>
+          <li><a href="">Soporte</a></li>
+        </ul>
+      </div>
+      <div class="footerfinal">
+        <p>Hecho con ❤️ en <span>NUCBAZAPPI</span></p>
+      </div>
+    </footer>
+  </body>
+</html>
