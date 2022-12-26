@@ -35,6 +35,42 @@
   }
 }
 
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 /* ----- variables ----- */
 
 :root {
@@ -89,6 +125,7 @@ main {
   cursor: pointer;
 }
 
+
 .cartContainer {
   position: relative;
 }
@@ -110,14 +147,19 @@ main {
   -webkit-background-clip: text;
 }
 
+.navBar li:hover > i {
+  transition: all 0.5s ease;
+  color: transparent;
+  background: var(--pepperoni);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 .cartBubble {
   position: absolute;
   top: -5px;
   left: 10px;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* text-align: center; */
   width: 13px;
   height: 13px;
   background-color: var(--pepperoni);
@@ -167,6 +209,7 @@ main {
   border: none;
   cursor: pointer;
 }
+
 .hero-img {
   position: absolute;
   display: flex;
@@ -180,7 +223,6 @@ main {
   top: 20px;
   left: 50vw;
   animation: rotate360 1.5s ease;
-  /* left: 750px; */
 }
 .pizzados {
   opacity: 0;
@@ -201,13 +243,14 @@ main {
   align-items: center;
   margin-bottom: 84px;
 }
-.recomendaciones p {
+.recomendaciones h2 {
   font-family: "Montserrat";
   padding-bottom: 24px;
   color: var(--light);
   font-size: 22px;
   padding-left: 130px;
   align-self: flex-start;
+  width: 100%;
 }
 .card-recommendation {
   display: flex;
@@ -273,13 +316,15 @@ main {
 }
 
 .categories-container {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
 .categories-container h2 {
   color: var(--light);
   font-size: 15px;
+  padding-left: 130px;
+  font-weight: 800;
 }
 
 .category {
@@ -302,6 +347,13 @@ main {
   flex-direction: column;
   z-index: -1;
   box-shadow: 0px 0px 50px rgba(1, 2, 7, 0.5);
+}
+
+.category-cards div:hover {
+  animation: shake 0.5s;
+  /* animation-iteration-count: 5; */
+  border: 2px solid red;
+  cursor: pointer;
 }
 
 .category-cards img:nth-child(2) {
@@ -457,6 +509,10 @@ footer {
   font-weight: 800;
 }
 
+.hero-text input:hover, .card-recommendation input:hover, .pizza-button input:hover {
+  animation: shake 0.7s ease;
+}
+
 @media (max-width: 1350px) {
   .card-recommendation {
     max-width: 900px;
@@ -514,8 +570,13 @@ footer {
     flex-direction: column;
   }
 
+  .recomendaciones h2, .categories-container h2, .popular h3 {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
   .popular-cards-container {
-    padding: 0;
+    padding: 0 1rem;
   }
 }
 
