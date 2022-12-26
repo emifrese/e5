@@ -479,7 +479,7 @@ footer {
   bottom: 0;
   width: 100%;
 
-  align-content: center;
+  align-items: center;
   justify-content: center;
   padding-bottom: 30px;
 }
@@ -546,6 +546,11 @@ footer {
 }
 
 @media (max-width: 950px) {
+
+  .hero {
+    padding: 0;
+  }
+
   .pizzauno,
   .pizzados {
     display: none;
@@ -580,11 +585,12 @@ footer {
 }
 
 @media (max-width: 450px) {
-  .hero {
-    padding: 0;
-  }
   
   .navBar ul {
     gap: 30px;
+  }
+
+  .footerlinks {
+    width: 80%;
   }
 }
