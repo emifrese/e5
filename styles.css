@@ -580,6 +580,10 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .hero {
+    padding: 0;
+  }
+  
   .navBar ul {
     gap: 30px;
   }
