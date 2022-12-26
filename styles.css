@@ -585,7 +585,10 @@ footer {
 }
 
 @media (max-width: 450px) {
-  
+  header {
+    padding: 30px
+  }
+
   .navBar ul {
     gap: 30px;
   }
