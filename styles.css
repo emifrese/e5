@@ -351,7 +351,6 @@ main {
 
 .category-cards div:hover {
   animation: shake 0.5s;
-  /* animation-iteration-count: 5; */
   border: 2px solid red;
   cursor: pointer;
 }
@@ -581,6 +580,10 @@ footer {
 }
 
 @media (max-width: 450px) {
+  .hero {
+    padding: 0;
+  }
+  
   .navBar ul {
     gap: 30px;
   }
